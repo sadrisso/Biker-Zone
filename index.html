@@ -1,241 +1,260 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-    <!-- daisy ui cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- daisy ui cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- poppins font cdn -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- poppins font cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
-    <style>
-        .font-poppins {
-            font-family: "Poppins", sans-serif;
+  <style>
+    .font-poppins {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'bike-primary': '#E76F51',
+          }
         }
-    </style>
-
-    <script>
-        tailwind.config = {
-        theme: {
-            extend: {
-            colors: {
-                clifford: '#da373d',
-                'bike-primary': '#E76F51',
-            }
-            }
-        }
-        }
-    </script>
-    </head>
+      }
+    }
+  </script>
+</head>
 
 <body class="font-poppins">
 
-    <header class="container mx-auto mt-4">
-        <div class="navbar bg-base-100">
-            <div class="flex-1">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"fill="none"viewBox="0 0 24 24"stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                    <li><a>Home</a></li>
-                    <li><a>Shop</a></li>
-                    <li><a>News</a></li>
-                    <li><a>Contact</a></li>
-                </ul>
-              </div>
-              <a class="btn btn-ghost text-xl sm:text-2xl lg:text-4xl font-bold">Biker Zone</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                    <li><a>Shop</a></li>
-                    <li><a>News</a></li>
-                    <li><a>Contact</a></li>
-              </ul>
-            </div>
-            <div class="">
-              <a class="btn bg-bike-primary text-white">Login</a>
-            </div>
+  <header class="container mx-auto mt-4">
+    <div class="navbar bg-base-100">
+      <div class="flex-1">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <li><a>Home</a></li>
+            <li><a>Shop</a></li>
+            <li><a>News</a></li>
+            <li><a>Contact</a></li>
+          </ul>
         </div>
-    </header>
+        <a class="btn btn-ghost text-xl sm:text-2xl lg:text-4xl font-bold">Biker Zone</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Home</a></li>
+          <li><a>Shop</a></li>
+          <li><a>News</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+      <div class="">
+        <a href="blog.html" class="btn bg-bike-primary text-white">Blog</a>
+      </div>
+    </div>
+  </header>
 
-    <main class="container mx-auto my-16">
-        <section class="bg-[#E76F511A] lg:h-[550px]">
-            <div class="carousel w-full">
-                <div id="slide1" class="carousel-item relative w-full">
-                  <div class="flex flex-col lg:flex-row justify-center items-center lg:p-24 p-20">
-                    <div class="space-y-8 flex-1">
-                        <h1 class="text-6xl font-bold">Ride-on R15 V4 <br>with Smile</h1>
-                        <p class="text-gray-300 text-xl">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                        <button class="btn btn-warning">Purchase</button>
-                    </div>
-                    <div class="flex-1">
-                        <img src="biker-zone-resources/images/slider/bike1.png" class="w-96 h-96 mx-auto" />
-                    </div>
-                  </div>
-                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                    <a href="#slide3" class="btn btn-circle">❮</a>
-                    <a href="#slide2" class="btn btn-circle">❯</a>
-                  </div>
-                </div>
-                <div id="slide2" class="carousel-item relative w-full">
-                    <div class="flex flex-col lg:flex-row justify-center items-center lg:p-24 p-20">
-                      <div class="space-y-8 flex-1">
-                          <h1 class="text-6xl font-bold">Ride-on R15 V4 <br>with Smile</h1>
-                          <p class="text-gray-300 text-xl">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                          <button class="btn btn-warning">Purchase</button>
-                      </div>
-                      <div class="flex-1">
-                          <img src="biker-zone-resources/images/slider/bike2.png" class="w-96 h-96 mx-auto" />
-                      </div>
-                    </div>
-                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                      <a href="#slide1" class="btn btn-circle">❮</a>
-                      <a href="#slide3" class="btn btn-circle">❯</a>
-                    </div>
-                  </div>
-                  <div id="slide3" class="carousel-item relative w-full">
-                    <div class="flex flex-col lg:flex-row justify-center items-center lg:p-24 p-20">
-                      <div class="space-y-8 flex-1">
-                          <h1 class="text-6xl font-bold">Ride-on R15 V4 <br>with Smile</h1>
-                          <p class="text-gray-300 text-xl">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                          <button class="btn btn-warning">Purchase</button>
-                      </div>
-                      <div class="flex-1">
-                          <img src="biker-zone-resources/images/slider/bike3.png" class="w-96 h-96 mx-auto" />
-                      </div>
-                    </div>
-                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                      <a href="#slide2" class="btn btn-circle">❮</a>
-                      <a href="#slide1" class="btn btn-circle">❯</a>
-                    </div>
-                  </div>
-              </div>
-        </section>
-
-        <section class="my-28 text-center">
-            <h1 class="text-5xl font-bold">Fetured Bikes In This Year</h1>
-            <p class="text-red-400 text-[16px] my-6 mb-14">Best bike collection</p>
-            <div class="flex flex-col lg:flex-row lg:justify-evenly items-center gap-9 ">
-                <img src="./biker-zone-resources/images/others/feature-bike.png" alt="">
-                <img src="./biker-zone-resources/images/others/feature-bike.png" alt="">
-                <img src="./biker-zone-resources/images/others/feature-bike.png" alt="">
+  <main class="container mx-auto my-16">
+    <section class="bg-[#E76F511A] lg:h-[550px]">
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <div class="flex flex-col lg:flex-row justify-center items-center lg:p-24 p-20">
+            <div class="space-y-8 flex-1">
+              <h1 class="text-6xl font-bold">Ride-on R15 V4 <br>with Smile</h1>
+              <p class="text-gray-300 text-xl">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                Velit officia consequat duis enim velit mollit.</p>
+              <button class="btn btn-warning">Purchase</button>
             </div>
-        </section>
-
-        <section class="text-center">
-            <h1 class="text-5xl font-bold mb-28">Latest News</h1>
-            <div class="card-container flex flex-col lg:flex-row lg:justify-evenly justify-center items-center gap-9">
-                <div class="card bg-base-100 w-96 shadow-xl">
-                    <figure>
-                      <img src="./biker-zone-resources/images/others/latest1.png" alt="latest-bike-1"/>
-                    </figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Ducati XDIAVEL S-73!</h2>
-                      <p class="text-left">If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Purchase</button>
-                      </div>
-                    </div>
-                </div>
-                <div class="card bg-base-100 w-96 shadow-xl">
-                    <figure>
-                      <img src="./biker-zone-resources/images/others/latest2.png" alt="latest-bike-1"/>
-                    </figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Ducati XDIAVEL S-73!</h2>
-                      <p class="text-left">If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Purchase</button>
-                      </div>
-                    </div>
-                </div>
-                <div class="card bg-base-100 w-96 shadow-xl">
-                    <figure>
-                      <img src="./biker-zone-resources/images/others/latest3.png" alt="latest-bike-1"/>
-                    </figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Ducati XDIAVEL S-73!</h2>
-                      <p class="text-left">If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Purchase</button>
-                      </div>
-                    </div>
-                </div>
+            <div class="flex-1">
+              <img src="biker-zone-resources/images/slider/bike1.png" class="w-96 h-96 mx-auto" />
             </div>
-        </section>
+          </div>
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <div class="flex flex-col lg:flex-row justify-center items-center lg:p-24 p-20">
+            <div class="space-y-8 flex-1">
+              <h1 class="text-6xl font-bold">Ride-on R15 V4 <br>with Smile</h1>
+              <p class="text-gray-300 text-xl">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                Velit officia consequat duis enim velit mollit.</p>
+              <button class="btn btn-warning">Purchase</button>
+            </div>
+            <div class="flex-1">
+              <img src="biker-zone-resources/images/slider/bike2.png" class="w-96 h-96 mx-auto" />
+            </div>
+          </div>
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <div class="flex flex-col lg:flex-row justify-center items-center lg:p-24 p-20">
+            <div class="space-y-8 flex-1">
+              <h1 class="text-6xl font-bold">Ride-on R15 V4 <br>with Smile</h1>
+              <p class="text-gray-300 text-xl">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                Velit officia consequat duis enim velit mollit.</p>
+              <button class="btn btn-warning">Purchase</button>
+            </div>
+            <div class="flex-1">
+              <img src="biker-zone-resources/images/slider/bike3.png" class="w-96 h-96 mx-auto" />
+            </div>
+          </div>
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section class="text-center">
-            <h1 class="text-5xl font-bold my-28">Frequently Asked <span class="text-[#E76F51]">Questions</span></h1>
-            <div class="hero">
-                <div class="hero-content flex-col lg:flex-row gap-8">
-                  <img src="./biker-zone-resources/images/others/faq.png" class="max-w-sm rounded-lg shadow-2xl" />
-                  <div class="space-y-6 ">
-                    <div class="collapse collapse-arrow border border-gray-200">
-                        <input type="radio" name="my-accordion-2" checked="checked" />
-                        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-                        <div class="collapse-content">
-                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni vero at quidem nobis odit, dolores doloremque rem? Beatae ipsa sint molestias, aspernatur odio a quisquam, nemo sunt culpa quaerat numquam, quos obcaecati? Totam eos rem suscipit id impedit quidem debitis?</p>
-                        </div>
-                      </div>
-                      <div class="collapse collapse-arrow border border-gray-200">
-                        <input type="radio" name="my-accordion-2" />
-                        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-                        <div class="collapse-content">
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nostrum laborum quo vero modi, voluptas ipsam ipsum magni eveniet, cum, maxime enim iste! Itaque cumque labore rem impedit ipsa ut laboriosam blanditiis beatae?</p>
-                        </div>
-                      </div>
-                      <div class="collapse collapse-arrow border border-gray-200">
-                        <input type="radio" name="my-accordion-2" />
-                        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-                        <div class="collapse-content">
-                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem minus quae, eum eveniet, dolorum animi at incidunt facere odit sed veritatis possimus ullam assumenda. Distinctio, minus magni? Eligendi dolore ex consequuntur a laborum asperiores dicta nulla delectus tempora? Ipsa quia nihil est sed ut? Saepe atque magnam porro nostrum iste.</p>
-                        </div>
-                      </div>
-                      <div class="collapse collapse-arrow border border-gray-200">
-                        <input type="radio" name="my-accordion-2" />
-                        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-                        <div class="collapse-content">
-                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem minus quae, eum eveniet, dolorum animi at incidunt facere odit sed veritatis possimus ullam assumenda. Distinctio, minus magni? Eligendi dolore ex consequuntur a laborum asperiores dicta nulla delectus tempora? Ipsa quia nihil est sed ut? Saepe atque magnam porro nostrum iste.</p>
-                        </div>
-                      </div>
-                  </div>
-                </div>
-              </div>
-        </section>
-    </main>
+    <section class="my-28 text-center">
+      <h1 class="text-5xl font-bold">Fetured Bikes In This Year</h1>
+      <p class="text-red-400 text-[16px] my-6 mb-14">Best bike collection</p>
+      <div class="flex flex-col lg:flex-row lg:justify-evenly items-center gap-9 ">
+        <img src="./biker-zone-resources/images/others/feature-bike.png" alt="">
+        <img src="./biker-zone-resources/images/others/feature-bike.png" alt="">
+        <img src="./biker-zone-resources/images/others/feature-bike.png" alt="">
+      </div>
+    </section>
 
-   
-    <footer class="footer bg-black text-neutral-content p-10 flex flex-col lg:flex-row lg:justify-between lg:px-48">
-            <aside>
-              <p>ACME Industries Ltd.<br/>Providing reliable tech since 1992</p>
-              <ul class="flex gap-6">
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
-                <li>FAQ</li>
-                <li>Details</li>
-              </ul>
-            </aside>
-            <nav>
-              <h6 class="footer-title">Social</h6>
-              <div class="grid grid-flow-col gap-4">
-                <a class="w-28">
-                  <img src="./biker-zone-resources/images/others/ios.png" alt="">
-                </a>
-                <a class="w-28">
-                  <img src="./biker-zone-resources/images/others/android.png" alt="">
-                </a>
+    <section class="text-center">
+      <h1 class="text-5xl font-bold mb-28">Latest News</h1>
+      <div class="card-container flex flex-col lg:flex-row lg:justify-evenly justify-center items-center gap-9">
+        <div class="card bg-base-100 w-96 shadow-xl">
+          <figure>
+            <img src="./biker-zone-resources/images/others/latest1.png" alt="latest-bike-1" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Ducati XDIAVEL S-73!</h2>
+            <p class="text-left">If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Purchase</button>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-base-100 w-96 shadow-xl">
+          <figure>
+            <img src="./biker-zone-resources/images/others/latest2.png" alt="latest-bike-1" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Ducati XDIAVEL S-73!</h2>
+            <p class="text-left">If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Purchase</button>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-base-100 w-96 shadow-xl">
+          <figure>
+            <img src="./biker-zone-resources/images/others/latest3.png" alt="latest-bike-1" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Ducati XDIAVEL S-73!</h2>
+            <p class="text-left">If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Purchase</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center">
+      <h1 class="text-5xl font-bold my-28">Frequently Asked <span class="text-[#E76F51]">Questions</span></h1>
+      <div class="hero">
+        <div class="hero-content flex-col lg:flex-row gap-8">
+          <img src="./biker-zone-resources/images/others/faq.png" class="max-w-sm rounded-lg shadow-2xl" />
+          <div class="space-y-6 ">
+            <div class="collapse collapse-arrow border border-gray-200">
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+              <div class="collapse-content">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni vero at quidem nobis odit, dolores
+                  doloremque rem? Beatae ipsa sint molestias, aspernatur odio a quisquam, nemo sunt culpa quaerat
+                  numquam, quos obcaecati? Totam eos rem suscipit id impedit quidem debitis?</p>
               </div>
-            </nav>
-        </footer>
+            </div>
+            <div class="collapse collapse-arrow border border-gray-200">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+              <div class="collapse-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nostrum laborum quo vero modi,
+                  voluptas ipsam ipsum magni eveniet, cum, maxime enim iste! Itaque cumque labore rem impedit ipsa ut
+                  laboriosam blanditiis beatae?</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow border border-gray-200">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+              <div class="collapse-content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem minus quae, eum eveniet,
+                  dolorum animi at incidunt facere odit sed veritatis possimus ullam assumenda. Distinctio, minus magni?
+                  Eligendi dolore ex consequuntur a laborum asperiores dicta nulla delectus tempora? Ipsa quia nihil est
+                  sed ut? Saepe atque magnam porro nostrum iste.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow border border-gray-200">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+              <div class="collapse-content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem minus quae, eum eveniet,
+                  dolorum animi at incidunt facere odit sed veritatis possimus ullam assumenda. Distinctio, minus magni?
+                  Eligendi dolore ex consequuntur a laborum asperiores dicta nulla delectus tempora? Ipsa quia nihil est
+                  sed ut? Saepe atque magnam porro nostrum iste.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer bg-black text-neutral-content p-10 flex flex-col lg:flex-row lg:justify-between lg:px-48">
+    <aside>
+      <p>ACME Industries Ltd.<br />Providing reliable tech since 1992</p>
+      <ul class="flex gap-6">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>FAQ</li>
+        <li>Details</li>
+      </ul>
+    </aside>
+    <nav>
+      <h6 class="footer-title">Social</h6>
+      <div class="grid grid-flow-col gap-4">
+        <a class="w-28">
+          <img src="./biker-zone-resources/images/others/ios.png" alt="">
+        </a>
+        <a class="w-28">
+          <img src="./biker-zone-resources/images/others/android.png" alt="">
+        </a>
+      </div>
+    </nav>
+  </footer>
 
 </body>
+
 </html>
